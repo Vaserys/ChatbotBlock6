@@ -3,7 +3,8 @@
 from csv import excel
 
 s = 'Support-Bot'
-
+email = 'itsupport@mail.de'
+rufnummer = '389345287954783'
 
 #########################################################################################
 
@@ -17,15 +18,16 @@ def ChatBotStart():
     while True:
         global produkt
         produkt = input("")
-
-        if produkt in options:
+        #produktliste = produkt.split()
+        #print(produktliste)
+        if produktliste in options :
            WelchesProgramm()
 #########################################################################################
 
 #Auswahl des Programms
 def WelchesProgramm():
 
-    match produkt:
+    match options:
 
         case 'Word':
             WordAbfrage()
@@ -46,6 +48,13 @@ def WelchesProgramm():
             VisioAbfrage()
 
 #########################################################################################
+def ZusatzInfo():
+    print(s + "Email: " + email)
+    print(S + "Rufnummer: " + rufnummer)
+    input("Press Enter to Exit")
+
+#########################################################################################
+
 #Abfrage der Probleme bei Word
 def WordAbfrage():
     wordoptions = ['Kaputt']
@@ -56,8 +65,8 @@ def WordAbfrage():
         if wordprodukt in wordoptions:
             print(s + ": Hier sind die Lösungen")
             print(s + "Sollten Sie weitere Fragen haben können Sie sich bei Folgenden Adressen melden:")
-            print(s + "Email: itsupport@mail.de")
-            print(S + "Rufnummer: 123593972943859")
+            print(s + "Email: " + email)
+            print(S + "Rufnummer: " + rufnummer)
             break
     input("Press ENTER to exit")
 #########################################################################################
@@ -71,8 +80,8 @@ def ExcelAbfrage():
         if excelprodukt in exceloptions:
             print(s + ": Hier sind die Lösungen")
             print(s + "Sollten Sie weitere Fragen haben können Sie sich bei Folgenden Adressen melden:")
-            print(s + "Email: itsupport@mail.de")
-            print(S + "Rufnummer: 123593972943859")
+            print(s + "Email: " + email)
+            print(S + "Rufnummer: " + rufnummer)
             break
     input("Press ENTER to exit")
 #########################################################################################
@@ -86,8 +95,8 @@ def PowerPointAbfrage():
         if powerpointprodukt in powerpointoptions:
             print(s + ": Hier sind die Lösungen")
             print(s + "Sollten Sie weitere Fragen haben können Sie sich bei Folgenden Adressen melden:")
-            print(s + "Email: itsupport@mail.de")
-            print(S + "Rufnummer: 123593972943859")
+            print(s + "Email: " + email)
+            print(S + "Rufnummer: " + rufnummer)
             break
     input("Press ENTER to exit")
 #########################################################################################
@@ -101,8 +110,8 @@ def OutlookAbfrage():
         if outlookprodukt in outlookoptions:
             print(s + ": Hier sind die Lösungen")
             print(s + "Sollten Sie weitere Fragen haben können Sie sich bei Folgenden Adressen melden:")
-            print(s + "Email: itsupport@mail.de")
-            print(S + "Rufnummer: 123593972943859")
+            print(s + "Email: " + email)
+            print(S + "Rufnummer: " + rufnummer)
             break
     input("Press ENTER to exit")
 #########################################################################################
@@ -116,8 +125,8 @@ def AccessAbfrage():
         if accessprodukt in accessoptions:
             print(s + ": Hier sind die Lösungen")
             print(s + "Sollten Sie weitere Fragen haben können Sie sich bei Folgenden Adressen melden:")
-            print(s + "Email: itsupport@mail.de")
-            print(S + "Rufnummer: 123593972943859")
+            print(s + "Email: " + email)
+            print(S + "Rufnummer: " + rufnummer)
             break
     input("Press ENTER to exit")
 #########################################################################################
@@ -131,8 +140,8 @@ def VisioAbfrage():
         if visioprodukt in visiooptions:
              print(s + ": Hier sind die Lösungen")
              print(s + "Sollten Sie weitere Fragen haben können Sie sich bei Folgenden Adressen melden:")
-             print(s + "Email: itsupport@mail.de")
-             print(S + "Rufnummer: 123593972943859")
+             print(s + "Email: " + email)
+             print(S + "Rufnummer: " + rufnummer)
              break
     input("Press ENTER to exit")
 #########################################################################################
