@@ -10,26 +10,23 @@ rufnummer = '389345287954783'
 
 #Start von den ChatBot
 def ChatBotStart():
-
     options = ['Word', 'Excel', 'PowerPoint', 'Outlook', 'Access', 'Visio']
-
     print(s + ": Willkommen, Ich bin " + s + ", bitte nennen Sie mir ein Produkt von Microsoft wo Sie Probleme haben.")
     print(s + ": Sollten Sie kein Problem haben, antworten Sie bitte mit: Nein")
     while True:
         global produkt
-        produkt = input("")
+        produkt = input()
         #produktliste = produkt.split()
         #print(produktliste)
-        if produktliste in options :
+        if produkt in options:
            WelchesProgramm()
-           else 
            break
 #########################################################################################
 
 #Auswahl des Programms
 def WelchesProgramm():
 
-    match options:
+    match produkt:
 
         case 'Word':
             WordAbfrage()
@@ -50,10 +47,10 @@ def WelchesProgramm():
             VisioAbfrage()
 
 #########################################################################################
-def ZusatzInfo():
-    print(s + "Email: " + email)
-    print(S + "Rufnummer: " + rufnummer)
-    input("Press Enter to Exit")
+#def ZusatzInfo():
+#    print(s + "Email: " + email)
+#    print(S + "Rufnummer: " + rufnummer)
+#    input("Press Enter to Exit")
 
 #########################################################################################
 
@@ -63,14 +60,14 @@ def WordAbfrage():
     print(s + ": Können Sie mir Ihr Problem mit Word genauer beschreiben?")
 
     while True:
-        wordprodukt = input("")
+        wordprodukt = input()
         if wordprodukt in wordoptions:
             print(s + ": Hier sind die Lösungen")
             print(s + "Sollten Sie weitere Fragen haben können Sie sich bei Folgenden Adressen melden:")
             print(s + "Email: " + email)
-            print(S + "Rufnummer: " + rufnummer)
+            print(s + "Rufnummer: " + rufnummer)
             break
-    input("Press ENTER to exit")
+    input("Press Enter to Exit")
 #########################################################################################
 #Abfrage der Probleme bei Excel
 def ExcelAbfrage():
@@ -78,12 +75,12 @@ def ExcelAbfrage():
     print(s + ": Können Sie mir Ihr Problem mit Excel genauer beschreiben?")
 
     while True:
-        excelprodukt = input("")
+        excelprodukt = input()
         if excelprodukt in exceloptions:
             print(s + ": Hier sind die Lösungen")
             print(s + "Sollten Sie weitere Fragen haben können Sie sich bei Folgenden Adressen melden:")
             print(s + "Email: " + email)
-            print(S + "Rufnummer: " + rufnummer)
+            print(s + "Rufnummer: " + rufnummer)
             break
     input("Press ENTER to exit")
 #########################################################################################
@@ -93,12 +90,12 @@ def PowerPointAbfrage():
     print(s + ": Können Sie mir Ihr Problem mit PowerPoint genauer beschreiben?")
 
     while True:
-        powerpointprodukt = input("")
+        powerpointprodukt = input()
         if powerpointprodukt in powerpointoptions:
             print(s + ": Hier sind die Lösungen")
             print(s + "Sollten Sie weitere Fragen haben können Sie sich bei Folgenden Adressen melden:")
             print(s + "Email: " + email)
-            print(S + "Rufnummer: " + rufnummer)
+            print(s + "Rufnummer: " + rufnummer)
             break
     input("Press ENTER to exit")
 #########################################################################################
@@ -108,12 +105,12 @@ def OutlookAbfrage():
     print(s + ": Können Sie mir Ihr Problem mit Outlook genauer beschreiben?")
 
     while True:
-        outlookprodukt = input("")
+        outlookprodukt = input()
         if outlookprodukt in outlookoptions:
             print(s + ": Hier sind die Lösungen")
             print(s + "Sollten Sie weitere Fragen haben können Sie sich bei Folgenden Adressen melden:")
             print(s + "Email: " + email)
-            print(S + "Rufnummer: " + rufnummer)
+            print(s + "Rufnummer: " + rufnummer)
             break
     input("Press ENTER to exit")
 #########################################################################################
@@ -123,12 +120,12 @@ def AccessAbfrage():
     print(s + ": Können Sie mir Ihr Problem mit Access genauer beschreiben?")
 
     while True:
-        accessprodukt = input("")
+        accessprodukt = input()
         if accessprodukt in accessoptions:
             print(s + ": Hier sind die Lösungen")
             print(s + "Sollten Sie weitere Fragen haben können Sie sich bei Folgenden Adressen melden:")
             print(s + "Email: " + email)
-            print(S + "Rufnummer: " + rufnummer)
+            print(s + "Rufnummer: " + rufnummer)
             break
     input("Press ENTER to exit")
 #########################################################################################
@@ -138,12 +135,12 @@ def VisioAbfrage():
     print(s + ": Können Sie mir Ihr Problem mit Visio genauer beschreiben?")
 
     while True:
-        visioprodukt = input("")
+        visioprodukt = input()
         if visioprodukt in visiooptions:
              print(s + ": Hier sind die Lösungen")
              print(s + "Sollten Sie weitere Fragen haben können Sie sich bei Folgenden Adressen melden:")
              print(s + "Email: " + email)
-             print(S + "Rufnummer: " + rufnummer)
+             print(s + "Rufnummer: " + rufnummer)
              break
     input("Press ENTER to exit")
 #########################################################################################
