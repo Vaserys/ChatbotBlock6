@@ -22,6 +22,8 @@ def ChatBotStart():
         #print(produktliste)
         if produktliste in options :
            WelchesProgramm()
+           else 
+           break
 #########################################################################################
 
 #Auswahl des Programms
