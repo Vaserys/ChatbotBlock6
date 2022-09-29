@@ -53,14 +53,14 @@ def WelchesProgramm():
             print(s + ": Ich wünsche Ihnen noch ein schönen Tag.")
             input("Press Enter to Exit")
 #########################################################################################
-#def ZusatzInfo():
+## def ZusatzInfo():
 #    print(s + "Email: " + email)
 #    print(S + "Rufnummer: " + rufnummer)
 #    input("Press Enter to Exit")
 
 #########################################################################################
 
-#Abfrage der Probleme bei Word
+## Abfrage der Probleme bei Word
 def WordAbfrage():
     wordoptions = ['Kaputt']
     print(s + ": Können Sie mir Ihr Problem mit Word genauer beschreiben?")
