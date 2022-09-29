@@ -9,8 +9,10 @@ rufnummer = '389345287954783'
 
 #Start von den ChatBot
 def ChatBotStart():
-    options = ['Word', 'Excel', 'PowerPoint', 'Outlook', 'Access', 'Visio', 'Nein']
+    options = ['Word', 'Excel', 'PowerPoint', 'Outlook', 'Access', 'Visio', 'Nein', 'Kontakt']
     print(s + ": Willkommen, Ich bin " + s + ", bitte nennen Sie mir ein Produkt von Microsoft wo Sie Probleme haben.")
+    print(s + ": Wählen Sie von folgenden Produkten aus.")
+    print(options)
     print(s + ": Sollten Sie kein Problem haben, antworten Sie bitte mit: Nein")
     while True:
         global produkt
@@ -51,6 +53,11 @@ def WelchesProgramm():
 
         case 'Nein':
             print(s + ": Ich wünsche Ihnen noch ein schönen Tag.")
+            input("Press Enter to Exit")
+
+        case 'Kontakt':
+            print(s + ": Email: " + email)
+            print(s + ": Rufnummer: " + rufnummer)
             input("Press Enter to Exit")
 #########################################################################################
 ## def ZusatzInfo():
