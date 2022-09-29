@@ -1,6 +1,5 @@
 #ChatBotBlock6
 # -*- coding: utf-8 -*-
-from csv import excel
 
 s = 'Support-Bot'
 email = 'itsupport@mail.de'
@@ -11,13 +10,17 @@ rufnummer = '389345287954783'
 #Start von den ChatBot
 def ChatBotStart():
     options = ['Word', 'Excel', 'PowerPoint', 'Outlook', 'Access', 'Visio']
-    print(s + ": Willkommen, Ich bin " + s + ", bitte nennen Sie mir ein Produkt von Microsoft wo Sie Probleme haben.")
+    print(s + ": Willkömmen, Ich bin " + s + ", bitte nennen Sie mir ein Produkt von Microsoft wo Sie Probleme haben.")
     print(s + ": Sollten Sie kein Problem haben, antworten Sie bitte mit: Nein")
     while True:
         global produkt
         produkt = input()
         #produktliste = produkt.split()
         #print(produktliste)
+        #vergleichen von List options und Liste produktliste
+        #übereinstimmung abgleichen mit options
+        #weitergabe options an WelchesProgramm
+
         if produkt in options:
            WelchesProgramm()
            break
