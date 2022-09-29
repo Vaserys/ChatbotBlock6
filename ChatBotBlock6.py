@@ -10,7 +10,7 @@ rufnummer = '389345287954783'
 #Start von den ChatBot
 def ChatBotStart():
     options = ['Word', 'Excel', 'PowerPoint', 'Outlook', 'Access', 'Visio']
-    print(s + ": Willkömmen, Ich bin " + s + ", bitte nennen Sie mir ein Produkt von Microsoft wo Sie Probleme haben.")
+    print(s + ": Willkommen, Ich bin " + s + ", bitte nennen Sie mir ein Produkt von Microsoft wo Sie Probleme haben.")
     print(s + ": Sollten Sie kein Problem haben, antworten Sie bitte mit: Nein")
     while True:
         global produkt
